@@ -21,8 +21,10 @@ class ServerProtocol(LineOnlyReceiver):
         for m in globalhistory[-10:]:
             self.sendLine(m.encode())
     def connectionMade(self):
+        print("tot")
         # Потенциальный баг для внимательных =)
-        self.factory.clients.append(self)
+
+        #self.factory.clients.append(self)
 
     def connectionLost(self, reason=connectionDone):
         self.factory.clients.remove(self)
