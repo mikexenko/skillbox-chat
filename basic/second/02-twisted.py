@@ -3,7 +3,7 @@
 #
 #  Copyright © 2019
 #
-#  Библиотека Twisted
+#  Бблиотека Twisted
 #
 #  https://twistedmatrix.com/
 #  https://pypi.org/project/Twisted/
