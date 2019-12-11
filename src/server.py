@@ -54,7 +54,7 @@ class ServerProtocol(LineOnlyReceiver):
                         self.sendLine("Dieser Name ist bereits vergeben!".encode())  # этот уже есть
                     elif maybename == "admin":
                             self.sendLine("Willst du auf den Arsch bekommen?".encode())  # этот притворяется админом
-                        else:
+
                             for user in self.factory.clients:
                                 user.sendLine((self.login + " ist da!").encode())  # предупреждаем остальных
                             self.login = maybename
